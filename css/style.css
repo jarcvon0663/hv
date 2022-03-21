@@ -138,7 +138,7 @@ body{
 }
 
 .instructor__paragraph{
-    text-align: left;
+    text-align: Justify;
     line-height: 1.5;
     font-style: italic;
     color: #615a5a;
@@ -232,6 +232,7 @@ body{
 .card__paragraph{
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: Justify;
 }
 
 .card__item:nth-last-of-type(1){
