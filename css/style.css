@@ -113,6 +113,13 @@ body{
     text-decoration: none;
 }
 
+/*botones*/
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /*idioma*/
 
 .idioma{
@@ -120,6 +127,12 @@ body{
     align-items: center;
     padding: 10px 0 0 0;
 }
+
+.es img{
+    height: 20px;
+    width: 20px;
+}
+
 
 .check{
     position: relative;
@@ -156,7 +169,8 @@ body{
     background: blue;
 }
 
-/* Instrcutor */
+
+/* Instructor */
 
 .instructor{
     text-align: center;
@@ -180,7 +194,7 @@ body{
 }
 
 .instructor__paragraph{
-    text-align: Justify;
+    text-align: left;
     line-height: 1.5;
     font-style: italic;
     color: #615a5a;
@@ -274,7 +288,6 @@ body{
 .card__paragraph{
     font-weight: 300;
     margin-bottom: 20px;
-    text-align: Justify;
 }
 
 .card__item:nth-last-of-type(1){
