@@ -105,13 +105,42 @@ body{
 
 
 .cta{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
-    background: var(--color-btn);
-    color: var(--text-btn);
-    padding: var(--padding-btn);
-    text-align: center;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a86ff;
     text-decoration: none;
 }
+    .cta:hover {
+        border-radius: 5px;
+        padding-right: 24px;
+        padding-left:8px;
+    }
+    .cta:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+    .cta:after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+    }
+
 
 /*botones*/
 
@@ -128,10 +157,6 @@ body{
     padding: 10px 0 0 0;
 }
 
-.es img{
-    height: 10px;
-    width: 10px;
-}
 
 
 .check{
@@ -169,6 +194,54 @@ body{
     background: blue;
 }
 
+
+
+/*descargar*/
+.descargar{
+    padding: 10px 300px 0 0;
+    text-align: right;
+}
+
+.descargar a{
+    min-width: 30px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+    text-decoration: none;
+}      
+.descargar:hover a{
+        background: #fff;
+        color: #2c0b8e
+}
+
+.css-button-fully-rounded--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+  }
+  .css-button-fully-rounded--blue:hover {
+    background: #fff;
+    color: #2c0b8e
+  }
 
 /* Instructor */
 
@@ -489,6 +562,11 @@ body{
         font-size: 3.8rem;
     }
 
+    /*descargar*/
+    .descargar{
+        padding: 10px 100px 0 0;
+        text-align: right;
+    }
     /* About */
 
     .about{
@@ -586,6 +664,16 @@ body{
         width: 90%;
     }
 
+
+    /*descargar*/
+    .descargar{
+        padding: 10px 50px 0 0;
+        text-align: right;
+        font-size: 9px;
+    }
+    .descargar a {
+        padding: 9px;
+    }
     /* About */
 
     .about{
